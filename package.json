@@ -20,16 +20,24 @@
     "test": "stencil test --spec --e2e",
     "test:watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "lint": "eslint src/**/*{.ts,.tsx}"
+    "lint": "eslint src/**/*{.ts,.tsx}",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "José Stiller",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.15.5",
     "@stencil/core": "^2.8.0",
     "@stencil/eslint-plugin": "^0.3.1",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/html": "^6.3.8",
     "@types/jest": "^26.0.24",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.25.1",
@@ -38,5 +46,6 @@
     "puppeteer": "^10.0.0",
     "storybook": "^6.3.8",
     "typescript": "^4.4.3"
-  }
+  },
+  "dependencies": {}
 }
