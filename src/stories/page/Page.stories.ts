@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/html';
 import { createPage } from './Page';
-import * as HeaderStories from './Header.stories';
-import { HeaderProps } from './Header';
+import * as HeaderStories from '../header/Header.stories';
+import { HeaderProps } from '../header/Header';
 
 export default {
   title: 'Example/Page',
