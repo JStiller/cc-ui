@@ -20,8 +20,8 @@
     "test:watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "lint": "eslint src/**/*{.ts,.tsx}",
-    "storybook": "start-storybook -p 6006 -s src/stories/assets,dist",
-    "build-storybook": "build-storybook -o docs -s src/stories/assets,dist"
+    "storybook": "start-storybook -p 6006 -s src/stories/assets,src/assets,dist",
+    "build-storybook": "build-storybook -o docs -s src/stories/assets,src/assets,dist"
   },
   "author": "José Stiller",
   "license": "MIT",
