@@ -15,6 +15,7 @@ export const config: Config = {
   ],
   devServer: {
       openBrowser: false,
+      logRequests: true
   },
   extras: {
     cssVarsShim: true,
