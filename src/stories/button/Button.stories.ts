@@ -1,44 +1,37 @@
 import { Story, Meta } from '@storybook/html';
-import { createButton, ButtonProps } from './Button';
+import { createButton } from './Button';
 
 export default {
-  title: 'Example/Button',
+  title: 'Button',
   argTypes: {
-    label: { control: 'text' },
+    href: { control: 'text' },
     primary: { control: 'boolean' },
-    backgroundColor: { control: 'color' },
-    size: {
-      control: { type: 'select', options: ['small', 'medium', 'large'] },
-    },
-    onClick: { action: 'onClick' },
+    innerHTML: { control: 'text' },
   },
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => {
+const Template: Story<HTMLCcButtonElement> = (args) => {
   // You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
   return createButton(args);
 };
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({}) as Story<HTMLCcButtonElement>;
 Primary.args = {
   primary: true,
-  label: 'Button',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
+export const Secondary = Template.bind({}) as Story<HTMLCcButtonElement>;
+Secondary.args = {};
+
+export const PrimaryLink = Template.bind({}) as Story<HTMLCcButtonElement>;
+PrimaryLink.args = {
+  primary: true,
+  href: '/',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+export const SecondaryLink = Template.bind({}) as Story<HTMLCcButtonElement>;
+SecondaryLink.args = {
+  primary: false,
+  href: '/',
 };

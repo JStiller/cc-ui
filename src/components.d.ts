@@ -6,56 +6,48 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface CcButton {
         /**
-          * The first name
+          * Do you want to link a document?
          */
-        "first": string;
+        "href": string | false;
         /**
-          * The last name
+          * Do you want an primary button?
          */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "primary": boolean;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLCcButtonElement extends Components.CcButton, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLCcButtonElement: {
+        prototype: HTMLCcButtonElement;
+        new (): HTMLCcButtonElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "cc-button": HTMLCcButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface CcButton {
         /**
-          * The first name
+          * Do you want to link a document?
          */
-        "first"?: string;
+        "href"?: string | false;
         /**
-          * The last name
+          * Do you want an primary button?
          */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "primary"?: boolean;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "cc-button": CcButton;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "cc-button": LocalJSX.CcButton & JSXBase.HTMLAttributes<HTMLCcButtonElement>;
         }
     }
 }

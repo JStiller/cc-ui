@@ -1,0 +1,55 @@
+@import '../../assets/css/settings/colors.scss';
+@import '../../assets/css/settings/sizes.scss';
+
+:host([primary]) {
+  --background-color: #{$color-primary-centric-green};
+  --border-color: #{$color-primary-centric-green};
+  --text-color: #{$color-secondary-black};
+}
+
+:host {
+  --background-color: #{$color-primary-white};
+  --border-color: #{$color-secondary-black};
+  --text-color: #{$color-secondary-black};
+
+  display: inline-flex;
+
+  button, a {
+    $border-size: $size-0040;
+
+    position: relative;
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    border-style: solid;
+    border-width: $border-size;
+    border-color: var(--border-color);
+    padding: $size-020 - $border-size $size-090 - $border-size $size-0213 - $border-size $size-0488 - $border-size;
+    min-height: $size-0688;
+    font-size: $size-0225;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    line-height: $size-0280;
+
+    & > svg {
+      position: absolute;
+      right: $size-0488;
+      & > g {
+        & > path {
+          stroke: var(--text-color);
+        }
+      }
+    }
+
+    &:hover {
+      --background-color: #{$color-secondary-black};
+      --border-color: #{$color-secondary-black};
+      --text-color: #{$color-primary-centric-green};
+      cursor: pointer;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,47 +1,17 @@
-import './button.css';
-
-export interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
-}
-
 /**
  * Primary UI component for user interaction
  */
-export const createButton = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
-  onClick,
-}: ButtonProps) => {
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.innerText = label;
-  btn.addEventListener('click', onClick);
+export const createButton = ({ primary = false, href = false, innerHTML = 'Button' }: Partial<HTMLCcButtonElement>): HTMLCcButtonElement => {
+  const btn = document.createElement('cc-button');
+  btn.innerHTML = innerHTML;
 
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  btn.className = ['storybook-button', `storybook-button--${size}`, mode].join(' ');
+  if (primary) {
+    btn.setAttribute('primary', '');
+  }
 
-  btn.style.backgroundColor = backgroundColor;
+  if (href !== false) {
+    btn.setAttribute('href', href);
+  }
 
   return btn;
 };
