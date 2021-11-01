@@ -11,4 +11,7 @@ module.exports = {
         sourceType: "module",
     },
     plugins: ["@typescript-eslint"],
+    rules: {
+        "@typescript-eslint/no-unsafe-return": "off"
+    }
 };
