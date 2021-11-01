@@ -1,4 +1,5 @@
 import { Config } from '@stencil/core';
+import { sass } from "@stencil/sass";
 
 export const config: Config = {
   namespace: 'codecentric',
@@ -12,6 +13,11 @@ export const config: Config = {
       type: 'docs-readme',
       dir: 'dist/docs'
     },
+  ],
+  plugins: [
+    sass({
+      injectGlobalPaths: [],
+    }),
   ],
   devServer: {
       openBrowser: false,
