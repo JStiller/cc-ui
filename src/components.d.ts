@@ -16,6 +16,12 @@ export namespace Components {
          */
         "primary": boolean;
     }
+    interface CcIcon {
+        /**
+          * What icon do you need?
+         */
+        "icon": string;
+    }
 }
 declare global {
     interface HTMLCcButtonElement extends Components.CcButton, HTMLStencilElement {
@@ -24,8 +30,15 @@ declare global {
         prototype: HTMLCcButtonElement;
         new (): HTMLCcButtonElement;
     };
+    interface HTMLCcIconElement extends Components.CcIcon, HTMLStencilElement {
+    }
+    var HTMLCcIconElement: {
+        prototype: HTMLCcIconElement;
+        new (): HTMLCcIconElement;
+    };
     interface HTMLElementTagNameMap {
         "cc-button": HTMLCcButtonElement;
+        "cc-icon": HTMLCcIconElement;
     }
 }
 declare namespace LocalJSX {
@@ -39,8 +52,15 @@ declare namespace LocalJSX {
          */
         "primary"?: boolean;
     }
+    interface CcIcon {
+        /**
+          * What icon do you need?
+         */
+        "icon"?: string;
+    }
     interface IntrinsicElements {
         "cc-button": CcButton;
+        "cc-icon": CcIcon;
     }
 }
 export { LocalJSX as JSX };
@@ -48,6 +68,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "cc-button": LocalJSX.CcButton & JSXBase.HTMLAttributes<HTMLCcButtonElement>;
+            "cc-icon": LocalJSX.CcIcon & JSXBase.HTMLAttributes<HTMLCcIconElement>;
         }
     }
 }

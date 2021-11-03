@@ -31,14 +31,9 @@
     color: var(--text-color);
     line-height: $size-0280;
 
-    & > svg {
+    & > cc-icon {
       position: absolute;
       right: $size-0488;
-      & > g {
-        & > path {
-          stroke: var(--text-color);
-        }
-      }
     }
 
     &:hover {
