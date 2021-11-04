@@ -1,0 +1,20 @@
+@import '../../assets/css/tools/fonts.scss';
+@import '../../assets/css/settings/sizes.scss';
+
+:host {
+  display: inline-flex;
+
+  & > a {
+    @include text-025;
+    display: inline-flex;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, $color-primary-centric-green-tints-09 0% 100%); // designed with $color-primary-centric-green and an opacity of 30% but that "color" is not defined in the styleguide
+    background-position: 0 $size-025;
+    background-repeat: repeat-x;
+    background-size: 100% $size-0088;
+
+    &:hover {
+      background-image: linear-gradient(to bottom, $color-primary-centric-green 0% 100%);
+    }
+  }
+}
