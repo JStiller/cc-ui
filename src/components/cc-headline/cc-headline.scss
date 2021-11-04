@@ -1,0 +1,33 @@
+@import '../../assets/css/tools/fonts.scss';
+
+:host {
+  display: flex;
+
+  & > h1, & > h2, & > h3, & > h4, & > h5, & > h6 {
+    margin: 0;
+  }
+
+  & > h1 {
+    @include text-100;
+  }
+
+  & > h2 {
+    @include text-070;
+  }
+
+  & > h3 {
+    @include text-060;
+  }
+
+  & > h4 {
+    @include text-050;
+  }
+
+  & > h5 {
+    @include text-040;
+  }
+
+  & > h6 {
+    @include text-030;
+  }
+}

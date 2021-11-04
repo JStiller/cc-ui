@@ -16,7 +16,9 @@ export const config: Config = {
   ],
   plugins: [
     sass({
-      injectGlobalPaths: [],
+      injectGlobalPaths: [
+        "src/assets/css/settings/fonts.scss"
+      ],
     }),
   ],
   devServer: {

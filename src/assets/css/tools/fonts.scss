@@ -1,0 +1,63 @@
+@import '../settings/sizes.scss';
+@import '../settings/colors.scss';
+
+@mixin text-base {
+    font-family: "Panton";
+    color: $color-secondary-black;
+}
+
+@mixin text-100 {
+    @include text-base;
+    font-size: $size-100;
+    font-weight: 800;
+    line-height: $size-120;
+}
+
+@mixin text-070 {
+    @include text-base;
+    font-size: $size-070;
+    font-weight: 800;
+    line-height: $size-085;
+}
+
+@mixin text-060 {
+    @include text-base;
+    font-size: $size-060;
+    font-weight: 800;
+    line-height: $size-075;
+}
+
+@mixin text-050 {
+    @include text-base;
+    font-size: $size-050;
+    font-weight: 800;
+    line-height: $size-065;
+}
+
+@mixin text-040 {
+    @include text-base;
+    font-size: $size-040;
+    font-weight: 800;
+    line-height: $size-0563;
+}
+
+@mixin text-030 {
+    @include text-base;
+    font-size: $size-030;
+    font-weight: 800;
+    line-height: $size-045;
+}
+
+@mixin text-025 {
+    @include text-base;
+    font-size: $size-025;
+    font-weight: normal;
+    line-height: $size-045;
+}
+
+@mixin text-0225 {
+    @include text-base;
+    font-size: $size-0225;
+    font-weight: normal;
+    line-height: $size-040;
+}

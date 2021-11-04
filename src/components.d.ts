@@ -16,6 +16,12 @@ export namespace Components {
          */
         "primary": boolean;
     }
+    interface CcHeadline {
+        /**
+          * Which rank do you want?
+         */
+        "rank": number;
+    }
     interface CcIcon {
         /**
           * What icon do you need?
@@ -30,6 +36,12 @@ declare global {
         prototype: HTMLCcButtonElement;
         new (): HTMLCcButtonElement;
     };
+    interface HTMLCcHeadlineElement extends Components.CcHeadline, HTMLStencilElement {
+    }
+    var HTMLCcHeadlineElement: {
+        prototype: HTMLCcHeadlineElement;
+        new (): HTMLCcHeadlineElement;
+    };
     interface HTMLCcIconElement extends Components.CcIcon, HTMLStencilElement {
     }
     var HTMLCcIconElement: {
@@ -38,6 +50,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "cc-button": HTMLCcButtonElement;
+        "cc-headline": HTMLCcHeadlineElement;
         "cc-icon": HTMLCcIconElement;
     }
 }
@@ -52,6 +65,12 @@ declare namespace LocalJSX {
          */
         "primary"?: boolean;
     }
+    interface CcHeadline {
+        /**
+          * Which rank do you want?
+         */
+        "rank"?: number;
+    }
     interface CcIcon {
         /**
           * What icon do you need?
@@ -60,6 +79,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "cc-button": CcButton;
+        "cc-headline": CcHeadline;
         "cc-icon": CcIcon;
     }
 }
@@ -68,6 +88,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "cc-button": LocalJSX.CcButton & JSXBase.HTMLAttributes<HTMLCcButtonElement>;
+            "cc-headline": LocalJSX.CcHeadline & JSXBase.HTMLAttributes<HTMLCcHeadlineElement>;
             "cc-icon": LocalJSX.CcIcon & JSXBase.HTMLAttributes<HTMLCcIconElement>;
         }
     }

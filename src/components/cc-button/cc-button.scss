@@ -1,5 +1,6 @@
 @import '../../assets/css/settings/colors.scss';
 @import '../../assets/css/settings/sizes.scss';
+@import '../../assets/css/tools/fonts.scss';
 
 :host([primary]) {
   --background-color: #{$color-primary-centric-green};
@@ -17,6 +18,9 @@
   button, a {
     $border-size: $size-0040;
 
+    @include text-0225;
+    line-height: $size-0280; // special, standard would be 32
+
     position: relative;
     display: inline-flex;
     box-sizing: border-box;
@@ -26,10 +30,7 @@
     border-color: var(--border-color);
     padding: $size-020 - $border-size $size-090 - $border-size $size-0213 - $border-size $size-0488 - $border-size;
     min-height: $size-0688;
-    font-size: $size-0225;
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
-    line-height: $size-0280;
 
     & > cc-icon {
       position: absolute;
