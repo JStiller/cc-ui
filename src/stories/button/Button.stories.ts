@@ -23,15 +23,3 @@ Primary.args = {
 
 export const Secondary = Template.bind({}) as Story<HTMLCcButtonElement>;
 Secondary.args = {};
-
-export const PrimaryLink = Template.bind({}) as Story<HTMLCcButtonElement>;
-PrimaryLink.args = {
-  primary: true,
-  href: '/',
-};
-
-export const SecondaryLink = Template.bind({}) as Story<HTMLCcButtonElement>;
-SecondaryLink.args = {
-  primary: false,
-  href: '/',
-};
