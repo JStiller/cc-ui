@@ -1,0 +1,51 @@
+@import '../../assets/css/settings/colors.scss';
+@import '../../assets/css/settings/sizes.scss';
+@import '../../assets/css/tools/fonts.scss';
+
+:host {
+  display: flex;
+
+  & > label {
+    @include text-0225;
+    line-height: $size-0280; // special, standard would be 32
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &::before {
+      box-sizing: border-box;
+      content: '';
+      display: flex;
+      width: $size-0280;
+      height: $size-0280;
+      border-style: solid;
+      border-width: $size-0018;
+      border-color: $color-special-grey;
+      margin: 0 $size-0280 0 0;
+    }
+
+    & > input {
+      &[type="checkbox"] {
+        display: none;
+      }
+    }
+  }
+}
+
+:host([checked]) {
+  & > label {
+    &::after {
+      box-sizing: border-box;
+      position: absolute;
+      left: $size-0018 + $size-0040;
+      content: '';
+      display: flex;
+      width: $size-0280 - 2 * $size-005;
+      height: $size-0280 - 2 * $size-005;
+      margin: 0 $size-0280 0 0;
+      background-color: $color-primary-centric-green;
+    }
+  }
+}
