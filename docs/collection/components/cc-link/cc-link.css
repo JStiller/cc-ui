@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Panton";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../typography/Panton.otf) format("opentype");
+}
+:host {
+  display: inline-flex;
+}
+:host > a {
+  font-family: "Panton";
+  color: #000000;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 36px;
+  display: inline-flex;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #D2FCEE 0% 100%);
+  background-position: 0 20px;
+  background-repeat: repeat-x;
+  background-size: 100% 7px;
+}
+:host > a:hover {
+  background-image: linear-gradient(to bottom, #22F4AE 0% 100%);
+}

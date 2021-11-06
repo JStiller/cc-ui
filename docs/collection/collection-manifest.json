@@ -1,0 +1,16 @@
+{
+  "entries": [
+    "./components/cc-button/cc-button.js",
+    "./components/cc-checkbox/cc-checkbox.js",
+    "./components/cc-headline/cc-headline.js",
+    "./components/cc-icon/cc-icon.js",
+    "./components/cc-link/cc-link.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.9.0",
+    "typescriptVersion": "4.2.3"
+  },
+  "collections": [],
+  "bundles": []
+}

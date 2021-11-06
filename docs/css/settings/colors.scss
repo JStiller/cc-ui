@@ -1,0 +1,165 @@
+// Primary
+$color-primary-white: #FFFFFF;
+$color-primary-centric-green: #22F4AE;
+$color-primary-code-blue: #00C9EC;
+$color-primary-centric-mint: #47D9CB;
+
+
+// Secondary
+$color-secondary-yellow: #F7EA2D;
+$color-secondary-red: #FF5A5F;
+$color-secondary-iris-blue: #007286;
+$color-secondary-black: #000000;
+
+// Primary color
+$color-primary-centric-green-shade-01: $color-primary-centric-green;
+$color-primary-centric-green-shade-02: #1EDB9C;
+$color-primary-centric-green-shade-03: #1BC38B;
+$color-primary-centric-green-shade-04: #17AA79;
+$color-primary-centric-green-shade-05: #149268;
+$color-primary-centric-green-shade-06: #117A57;
+$color-primary-centric-green-shade-07: #0D6145;
+$color-primary-centric-green-shade-08: #0A4934;
+$color-primary-centric-green-shade-09: #063022;
+$color-primary-centric-green-shade-10: #031811;
+$color-primary-centric-green-shade-11: $color-secondary-black;
+
+$color-primary-centric-green-tints-01: $color-primary-centric-green;
+$color-primary-centric-green-tints-02: #38F5B6;
+$color-primary-centric-green-tints-03: #4EF6BE;
+$color-primary-centric-green-tints-04: #64F7C6;
+$color-primary-centric-green-tints-05: #7AF8CE;
+$color-primary-centric-green-tints-06: #90F9D6;
+$color-primary-centric-green-tints-07: #A6FADE;
+$color-primary-centric-green-tints-08: #BCFBE6;
+$color-primary-centric-green-tints-09: #D2FCEE;
+$color-primary-centric-green-tints-10: #E8FDF6;
+$color-primary-centric-green-tints-11: $color-primary-white;
+
+// Empower portfolio color
+$color-primary-code-blue-shade-01: $color-primary-code-blue;
+$color-primary-code-blue-shade-02: #00B5D4;
+$color-primary-code-blue-shade-03: #00A1BD;
+$color-primary-code-blue-shade-04: #008DA5;
+$color-primary-code-blue-shade-05: #00798E;
+$color-primary-code-blue-shade-06: #006576;
+$color-primary-code-blue-shade-07: #00505E;
+$color-primary-code-blue-shade-08: #003C47;
+$color-primary-code-blue-shade-09: #00282F;
+$color-primary-code-blue-shade-10: #001418;
+$color-primary-code-blue-shade-11: $color-secondary-black;
+
+$color-primary-code-blue-tints-01: $color-primary-code-blue;
+$color-primary-code-blue-tints-02: #1ACEEE;
+$color-primary-code-blue-tints-03: #33D4F0;
+$color-primary-code-blue-tints-04: #4DD9F2;
+$color-primary-code-blue-tints-05: #66DFF4;
+$color-primary-code-blue-tints-06: #80E4F6;
+$color-primary-code-blue-tints-07: #99E9F7;
+$color-primary-code-blue-tints-08: #B3EFF9;
+$color-primary-code-blue-tints-09: #CCF4FB;
+$color-primary-code-blue-tints-10: #E6FAFD;
+$color-primary-code-blue-tints-11: $color-primary-white;
+
+// Technology portfolio color
+$color-primary-centric-mint-shade-01: $color-primary-centric-mint;
+$color-primary-centric-mint-shade-02: #40C3B7;
+$color-primary-centric-mint-shade-03: #39AEA2;
+$color-primary-centric-mint-shade-04: #32988E;
+$color-primary-centric-mint-shade-05: #2B827A;
+$color-primary-centric-mint-shade-06: #246D66;
+$color-primary-centric-mint-shade-07: #1C5751;
+$color-primary-centric-mint-shade-08: #15413D;
+$color-primary-centric-mint-shade-09: #0E2B29;
+$color-primary-centric-mint-shade-10: #071614;
+$color-primary-centric-mint-shade-11: $color-secondary-black;
+
+$color-primary-centric-mint-tints-01: $color-primary-centric-mint;
+$color-primary-centric-mint-tints-02: #59DDD0;
+$color-primary-centric-mint-tints-03: #6CE1D5;
+$color-primary-centric-mint-tints-04: #7EE4DB;
+$color-primary-centric-mint-tints-05: #91E8E0;
+$color-primary-centric-mint-tints-06: #A3ECE5;
+$color-primary-centric-mint-tints-07: #B5F0EA;
+$color-primary-centric-mint-tints-08: #C8F0EA;
+$color-primary-centric-mint-tints-09: #DAF7F5;
+$color-primary-centric-mint-tints-10: #EDFBFA;
+$color-primary-centric-mint-tints-11: $color-primary-white;
+
+// Create portfolio color
+$color-secondary-yellow-shade-01: $color-secondary-yellow;
+$color-secondary-yellow-shade-02: #DED228;
+$color-secondary-yellow-shade-03: #C5BB24;
+$color-secondary-yellow-shade-04: #ACA31F;
+$color-secondary-yellow-shade-05: #948C1B;
+$color-secondary-yellow-shade-06: #7B7516;
+$color-secondary-yellow-shade-07: #625D12;
+$color-secondary-yellow-shade-08: #4A460D;
+$color-secondary-yellow-shade-09: #312E09;
+$color-secondary-yellow-shade-10: #121704;
+$color-secondary-yellow-shade-11: $color-secondary-black;
+
+$color-secondary-yellow-tints-01: $color-secondary-yellow;
+$color-secondary-yellow-tints-02: #F7EC42;
+$color-secondary-yellow-tints-03: #F8EE56;
+$color-secondary-yellow-tints-04: #F9F06C;
+$color-secondary-yellow-tints-05: #FAF281;
+$color-secondary-yellow-tints-06: #FBF496;
+$color-secondary-yellow-tints-07: #FBF6AB;
+$color-secondary-yellow-tints-08: #FCF8C0;
+$color-secondary-yellow-tints-09: #FDFAD5;
+$color-secondary-yellow-tints-10: #FEFCEA;
+$color-secondary-yellow-tints-11: $color-primary-white;
+
+// Red
+$color-secondary-red-shade-01: $color-secondary-red;
+$color-secondary-red-shade-02: #E55155;
+$color-secondary-red-shade-03: #CC484C;
+$color-secondary-red-shade-04: #B23E42;
+$color-secondary-red-shade-05: #993639;
+$color-secondary-red-shade-06: #7F2D2F;
+$color-secondary-red-shade-07: #662426;
+$color-secondary-red-shade-08: #4C1B1C;
+$color-secondary-red-shade-09: #331213;
+$color-secondary-red-shade-10: #190909;
+$color-secondary-red-shade-11: $color-secondary-black;
+
+$color-secondary-red-tints-01: $color-secondary-red;
+$color-secondary-red-tints-02: #FF6A6F;
+$color-secondary-red-tints-03: #FF7A7E;
+$color-secondary-red-tints-04: #FF8B8F;
+$color-secondary-red-tints-05: #FF9C9F;
+$color-secondary-red-tints-06: #FFACAF;
+$color-secondary-red-tints-07: #FFBDBF;
+$color-secondary-red-tints-08: #FFCDCF;
+$color-secondary-red-tints-09: #FFDEDF;
+$color-secondary-red-tints-10: #FFEEEF;
+$color-secondary-red-tints-11: $color-primary-white;
+
+// Iris blue
+$color-secondary-iris-blue-shade-01: $color-secondary-iris-blue;
+$color-secondary-iris-blue-shade-02: #006678;
+$color-secondary-iris-blue-shade-03: #005B6B;
+$color-secondary-iris-blue-shade-04: #004F5D;
+$color-secondary-iris-blue-shade-05: #004450;
+$color-secondary-iris-blue-shade-06: #003943;
+$color-secondary-iris-blue-shade-07: #002D35;
+$color-secondary-iris-blue-shade-08: #002228;
+$color-secondary-iris-blue-shade-09: #00161A;
+$color-secondary-iris-blue-shade-10: #000B0D;
+$color-secondary-iris-blue-shade-11: $color-secondary-black;
+
+$color-secondary-iris-blue-tints-01: $color-secondary-iris-blue;
+$color-secondary-iris-blue-tints-02: #198092;
+$color-secondary-iris-blue-tints-03: #328E9E;
+$color-secondary-iris-blue-tints-04: #4C9CAA;
+$color-secondary-iris-blue-tints-05: #66AAB6;
+$color-secondary-iris-blue-tints-06: #7FB8C2;
+$color-secondary-iris-blue-tints-07: #99C6CE;
+$color-secondary-iris-blue-tints-08: #B2D4DA;
+$color-secondary-iris-blue-tints-09: #CCE2E6;
+$color-secondary-iris-blue-tints-10: #E5F0F2;
+$color-secondary-iris-blue-tints-11: $color-primary-white;
+
+// Special
+$color-special-grey: #DADADA;
