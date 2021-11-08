@@ -1,0 +1,43 @@
+@import '../../assets/css/settings/colors.scss';
+@import '../../assets/css/settings/sizes.scss';
+@import '../../assets/css/tools/fonts.scss';
+
+:host([portfolio="create"]) {
+  --background-color: #{$color-secondary-yellow};
+}
+
+:host([portfolio="technology"]) {
+  --background-color: #{$color-primary-centric-mint};
+}
+
+:host([portfolio="empower"]) {
+  --background-color: #{$color-primary-code-blue};
+}
+
+:host([columns="2"]) {
+  --columns: 1fr 1fr;
+}
+
+:host([columns="3"]) {
+  --columns: 1fr 1fr 1fr;
+}
+
+:host([columns="4"]) {
+  --columns: 1fr 1fr 1fr 1fr;
+}
+
+:host {
+  --background-color: #{$color-primary-white};
+  --columns: 1fr;
+
+  @include text-025;
+
+  display: grid;
+  grid-template-columns: var(--columns);
+  grid-template-rows: 1fr;
+  gap: $size-050 $size-050;
+  width: 1170px; // @todo not defined
+  padding: $size-050; // @todo style guide wants 42 pixels
+  margin: 0 auto;
+  background-color: var(--background-color);
+}
