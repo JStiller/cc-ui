@@ -26,6 +26,16 @@ export namespace Components {
          */
         "value": string;
     }
+    interface CcContent {
+        /**
+          * Which topic you want to address?
+         */
+        "columns": number | false;
+        /**
+          * Which topic you want to address?
+         */
+        "portfolio": string | false;
+    }
     interface CcHeadline {
         /**
           * Which rank do you want?
@@ -62,6 +72,12 @@ declare global {
         prototype: HTMLCcCheckboxElement;
         new (): HTMLCcCheckboxElement;
     };
+    interface HTMLCcContentElement extends Components.CcContent, HTMLStencilElement {
+    }
+    var HTMLCcContentElement: {
+        prototype: HTMLCcContentElement;
+        new (): HTMLCcContentElement;
+    };
     interface HTMLCcHeadlineElement extends Components.CcHeadline, HTMLStencilElement {
     }
     var HTMLCcHeadlineElement: {
@@ -83,6 +99,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "cc-button": HTMLCcButtonElement;
         "cc-checkbox": HTMLCcCheckboxElement;
+        "cc-content": HTMLCcContentElement;
         "cc-headline": HTMLCcHeadlineElement;
         "cc-icon": HTMLCcIconElement;
         "cc-link": HTMLCcLinkElement;
@@ -109,6 +126,16 @@ declare namespace LocalJSX {
          */
         "value"?: string;
     }
+    interface CcContent {
+        /**
+          * Which topic you want to address?
+         */
+        "columns"?: number | false;
+        /**
+          * Which topic you want to address?
+         */
+        "portfolio"?: string | false;
+    }
     interface CcHeadline {
         /**
           * Which rank do you want?
@@ -134,6 +161,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "cc-button": CcButton;
         "cc-checkbox": CcCheckbox;
+        "cc-content": CcContent;
         "cc-headline": CcHeadline;
         "cc-icon": CcIcon;
         "cc-link": CcLink;
@@ -145,6 +173,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "cc-button": LocalJSX.CcButton & JSXBase.HTMLAttributes<HTMLCcButtonElement>;
             "cc-checkbox": LocalJSX.CcCheckbox & JSXBase.HTMLAttributes<HTMLCcCheckboxElement>;
+            "cc-content": LocalJSX.CcContent & JSXBase.HTMLAttributes<HTMLCcContentElement>;
             "cc-headline": LocalJSX.CcHeadline & JSXBase.HTMLAttributes<HTMLCcHeadlineElement>;
             "cc-icon": LocalJSX.CcIcon & JSXBase.HTMLAttributes<HTMLCcIconElement>;
             "cc-link": LocalJSX.CcLink & JSXBase.HTMLAttributes<HTMLCcLinkElement>;

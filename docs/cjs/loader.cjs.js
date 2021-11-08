@@ -28,7 +28,7 @@ const patchEsm = () => {
 const defineCustomElements = (win, options) => {
   if (typeof window === 'undefined') return Promise.resolve();
   return patchEsm().then(() => {
-  return index.bootstrapLazy([["cc-button.cjs",[[1,"cc-button",{"primary":[4],"href":[8]}]]],["cc-link.cjs",[[1,"cc-link",{"href":[1],"external":[4]}]]],["cc-checkbox.cjs",[[1,"cc-checkbox",{"checked":[1540],"value":[1]},[[0,"click","handleClick"]]]]],["cc-headline.cjs",[[1,"cc-headline",{"rank":[2]}]]],["cc-icon.cjs",[[1,"cc-icon",{"icon":[1]}]]]], options);
+  return index.bootstrapLazy([["cc-button.cjs",[[1,"cc-button",{"primary":[4],"href":[8]}]]],["cc-link.cjs",[[1,"cc-link",{"href":[1],"external":[4]}]]],["cc-checkbox.cjs",[[1,"cc-checkbox",{"checked":[1540],"value":[1]},[[0,"click","handleClick"]]]]],["cc-content.cjs",[[1,"cc-content",{"portfolio":[8],"columns":[8]}]]],["cc-headline.cjs",[[1,"cc-headline",{"rank":[2]}]]],["cc-icon.cjs",[[1,"cc-icon",{"icon":[1]}]]]], options);
   });
 };
 
