@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createCheckbox } from './Checkbox';
 
 export default {
-  title: 'Checkbox',
+  title: 'Interactions/Checkbox',
   argTypes: {
     value: { control: 'text' },
     checked: { control: 'boolean' },

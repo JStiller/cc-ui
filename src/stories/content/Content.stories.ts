@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createContent } from './Content';
 
 export default {
-  title: 'Content',
+  title: 'Structure/Content',
   argTypes: {
     portfolio: { control: 'text' },
     columns: { control: 'number' },

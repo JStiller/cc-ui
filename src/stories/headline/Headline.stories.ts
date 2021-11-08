@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createHeadline } from './Headline';
 
 export default {
-  title: 'Headline',
+  title: 'Structure/Headline',
   argTypes: {
     rank: { control: 'number' },
     innerHTML: { control: 'text' },

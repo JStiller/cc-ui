@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createIcon } from './Icon';
 
 export default {
-  title: 'Icon',
+  title: 'Tokens/Icon',
   argTypes: {
     icon: { control: 'text' },
   },
