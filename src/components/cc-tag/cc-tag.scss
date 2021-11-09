@@ -1,0 +1,13 @@
+@import '../../assets/css/tools/fonts.scss';
+@import '../../assets/css/settings/colors.scss';
+@import '../../assets/css/settings/sizes.scss';
+
+:host {
+  @include text-025;
+
+  display: inline-flex;
+  box-sizing: border-box;
+  background-color: $color-special-grey2;
+  height: $size-045; // @todo 37 pixel was defined in style guide
+  padding: 0 $size-020;
+}

@@ -58,6 +58,8 @@ export namespace Components {
          */
         "href": string;
     }
+    interface CcTag {
+    }
 }
 declare global {
     interface HTMLCcButtonElement extends Components.CcButton, HTMLStencilElement {
@@ -96,6 +98,12 @@ declare global {
         prototype: HTMLCcLinkElement;
         new (): HTMLCcLinkElement;
     };
+    interface HTMLCcTagElement extends Components.CcTag, HTMLStencilElement {
+    }
+    var HTMLCcTagElement: {
+        prototype: HTMLCcTagElement;
+        new (): HTMLCcTagElement;
+    };
     interface HTMLElementTagNameMap {
         "cc-button": HTMLCcButtonElement;
         "cc-checkbox": HTMLCcCheckboxElement;
@@ -103,6 +111,7 @@ declare global {
         "cc-headline": HTMLCcHeadlineElement;
         "cc-icon": HTMLCcIconElement;
         "cc-link": HTMLCcLinkElement;
+        "cc-tag": HTMLCcTagElement;
     }
 }
 declare namespace LocalJSX {
@@ -158,6 +167,8 @@ declare namespace LocalJSX {
          */
         "href"?: string;
     }
+    interface CcTag {
+    }
     interface IntrinsicElements {
         "cc-button": CcButton;
         "cc-checkbox": CcCheckbox;
@@ -165,6 +176,7 @@ declare namespace LocalJSX {
         "cc-headline": CcHeadline;
         "cc-icon": CcIcon;
         "cc-link": CcLink;
+        "cc-tag": CcTag;
     }
 }
 export { LocalJSX as JSX };
@@ -177,6 +189,7 @@ declare module "@stencil/core" {
             "cc-headline": LocalJSX.CcHeadline & JSXBase.HTMLAttributes<HTMLCcHeadlineElement>;
             "cc-icon": LocalJSX.CcIcon & JSXBase.HTMLAttributes<HTMLCcIconElement>;
             "cc-link": LocalJSX.CcLink & JSXBase.HTMLAttributes<HTMLCcLinkElement>;
+            "cc-tag": LocalJSX.CcTag & JSXBase.HTMLAttributes<HTMLCcTagElement>;
         }
     }
 }

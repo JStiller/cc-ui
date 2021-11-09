@@ -2,6 +2,10 @@
 
 ## [unreleased] - 08.11.2021
 
+### Added
+
+- cc-tag component [#18](https://github.com/JStiller/cc-ui/issues/18)
+
 ### Changed
 
 - local setup to match github-pages [#3](https://github.com/JStiller/cc-ui/issues/3)
