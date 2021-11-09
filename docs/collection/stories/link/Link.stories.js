@@ -1,6 +1,6 @@
 import { createLink } from './Link';
 export default {
-  title: 'Link',
+  title: 'Interactions/Link',
   argTypes: {
     href: { control: 'text' },
     external: { control: 'boolean' },

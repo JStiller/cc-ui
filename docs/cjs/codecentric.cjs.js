@@ -1,9 +1,9 @@
 'use strict';
 
-const index = require('./index-3502f251.js');
+const index = require('./index-8ede2969.js');
 
 /*
- Stencil Client Patch Browser v2.9.0 | MIT Licensed | https://stenciljs.com
+ Stencil Client Patch Browser v2.10.0 | MIT Licensed | https://stenciljs.com
  */
 const getDynamicImportFunction = (namespace) => `__sc_import_${namespace.replace(/\s|-/g, '_')}`;
 const patchBrowser = () => {
@@ -38,7 +38,7 @@ const patchBrowser = () => {
         if (!index.win.customElements) {
             // module support, but no custom elements support (Old Edge)
             // @ts-ignore
-            return Promise.resolve().then(function () { return require(/* webpackChunkName: "polyfills-dom" */ './dom-500ce210.js'); }).then(() => opts);
+            return Promise.resolve().then(function () { return require(/* webpackChunkName: "polyfills-dom" */ './dom-95afd968.js'); }).then(() => opts);
         }
     }
     return index.promiseResolve(opts);
@@ -82,5 +82,5 @@ const patchDynamicImport = (base, orgScriptElm) => {
 };
 
 patchBrowser().then(options => {
-  return index.bootstrapLazy([["cc-button.cjs",[[1,"cc-button",{"primary":[4],"href":[8]}]]],["cc-link.cjs",[[1,"cc-link",{"href":[1],"external":[4]}]]],["cc-checkbox.cjs",[[1,"cc-checkbox",{"checked":[1540],"value":[1]},[[0,"click","handleClick"]]]]],["cc-content.cjs",[[1,"cc-content",{"portfolio":[8],"columns":[8]}]]],["cc-headline.cjs",[[1,"cc-headline",{"rank":[2]}]]],["cc-icon.cjs",[[1,"cc-icon",{"icon":[1]}]]]], options);
+  return index.bootstrapLazy([["cc-button.cjs",[[1,"cc-button",{"primary":[4],"href":[8]}]]],["cc-link.cjs",[[1,"cc-link",{"href":[1],"external":[4]}]]],["cc-checkbox.cjs",[[1,"cc-checkbox",{"checked":[1540],"value":[1]},[[0,"click","handleClick"]]]]],["cc-content.cjs",[[1,"cc-content",{"portfolio":[8],"columns":[8]}]]],["cc-headline.cjs",[[1,"cc-headline",{"rank":[2]}]]],["cc-tag.cjs",[[1,"cc-tag"]]],["cc-icon.cjs",[[1,"cc-icon",{"icon":[1]}]]]], options);
 });

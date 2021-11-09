@@ -9,7 +9,7 @@ export class CcIcon {
   render() {
     return (h(Host, null,
       h("svg", { style: { 'height': '22', 'width': '22' } },
-        h("use", { href: `/iconography/${this.icon}.svg#${this.icon}` }))));
+        h("use", { href: `iconography/${this.icon}.svg#${this.icon}` }))));
   }
   static get is() { return "cc-icon"; }
   static get encapsulation() { return "shadow"; }

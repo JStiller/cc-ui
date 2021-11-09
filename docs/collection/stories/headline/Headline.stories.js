@@ -1,6 +1,6 @@
 import { createHeadline } from './Headline';
 export default {
-  title: 'Headline',
+  title: 'Structure/Headline',
   argTypes: {
     rank: { control: 'number' },
     innerHTML: { control: 'text' },

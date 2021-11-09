@@ -1,6 +1,6 @@
 import { createButton } from './Button';
 export default {
-  title: 'Button',
+  title: 'Interactions/Button',
   argTypes: {
     href: { control: 'text' },
     primary: { control: 'boolean' },

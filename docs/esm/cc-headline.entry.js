@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-e3a83d7c.js';
+import { r as registerInstance, h, H as Host } from './index-975d6e50.js';
 
 const ccHeadlineCss = "@font-face{font-family:\"Panton\";font-style:normal;font-weight:normal;src:url(../../typography/Panton.otf) format(\"opentype\")}:host{display:-ms-flexbox;display:flex}:host>h1,:host>h2,:host>h3,:host>h4,:host>h5,:host>h6{margin:0}:host>h1{font-family:\"Panton\";color:#000000;font-size:80px;font-weight:800;line-height:96px}:host>h2{font-family:\"Panton\";color:#000000;font-size:56px;font-weight:800;line-height:68px}:host>h3{font-family:\"Panton\";color:#000000;font-size:48px;font-weight:800;line-height:60px}:host>h4{font-family:\"Panton\";color:#000000;font-size:40px;font-weight:800;line-height:52px}:host>h5{font-family:\"Panton\";color:#000000;font-size:32px;font-weight:800;line-height:45px}:host>h6{font-family:\"Panton\";color:#000000;font-size:24px;font-weight:800;line-height:36px}";
 

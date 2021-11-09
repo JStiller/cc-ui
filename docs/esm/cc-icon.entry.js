@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-e3a83d7c.js';
+import { r as registerInstance, h, H as Host } from './index-975d6e50.js';
 
 const ccIconCss = "@font-face{font-family:\"Panton\";font-style:normal;font-weight:normal;src:url(../../typography/Panton.otf) format(\"opentype\")}:host{display:block}";
 
@@ -11,7 +11,7 @@ let CcIcon = class {
     this.icon = 'undefined';
   }
   render() {
-    return (h(Host, null, h("svg", { style: { 'height': '22', 'width': '22' } }, h("use", { href: `/iconography/${this.icon}.svg#${this.icon}` }))));
+    return (h(Host, null, h("svg", { style: { 'height': '22', 'width': '22' } }, h("use", { href: `iconography/${this.icon}.svg#${this.icon}` }))));
   }
 };
 CcIcon.style = ccIconCss;
