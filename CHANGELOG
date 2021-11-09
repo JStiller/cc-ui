@@ -1,17 +1,26 @@
 # CHANGELOG
 
+## [unreleased] - 08.11.2021
+
+### Changed
+
+- local setup to match github-pages [#3](https://github.com/JStiller/cc-ui/issues/3)
+- changelog references [#15](https://github.com/JStiller/cc-ui/issues/15)
+- storybook story structure [#16](https://github.com/JStiller/cc-ui/issues/16)
+- update stenciljs [#17](https://github.com/JStiller/cc-ui/issues/17)
+
 ## [0.2.0] - 08.11.2021
 
 ### Added
 
-- cc-content component
+- cc-content component [#9](https://github.com/JStiller/cc-ui/issues/9)
 
 ## [0.1.0] - 06.11.2021
 
 ### Added
 
-- cc-button component
-- cc-checkbox component
-- cc-headline component
-- cc-icon component
-- cc-link component
+- cc-button component [#10](https://github.com/JStiller/cc-ui/issues/10)
+- cc-checkbox component [#14](https://github.com/JStiller/cc-ui/issues/14)
+- cc-headline component [#11](https://github.com/JStiller/cc-ui/issues/11)
+- cc-icon component [#13](https://github.com/JStiller/cc-ui/issues/13)
+- cc-link component [#12](https://github.com/JStiller/cc-ui/issues/12)
