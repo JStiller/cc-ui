@@ -9,6 +9,10 @@
 - storybook story structure [#16](https://github.com/JStiller/cc-ui/issues/16)
 - update stenciljs [#17](https://github.com/JStiller/cc-ui/issues/17)
 
+### Removed
+
+- remove e2e [#18](https://github.com/JStiller/cc-ui/issues/18)
+
 ## [0.2.0] - 08.11.2021
 
 ### Added
