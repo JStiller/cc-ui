@@ -2,7 +2,11 @@ import { createTag } from './Tag';
 export default {
   title: 'Structure/Tag',
   argTypes: {
-    innerHTML: { control: 'text' },
+    innerHTML: {
+      name: 'Content',
+      control: 'text',
+      defaultValue: 'Tag'
+    },
   },
 };
 const Template = (args) => {
@@ -10,5 +14,5 @@ const Template = (args) => {
   // return `<div>${label}</div>`;
   return createTag(args);
 };
-export const Standard = Template.bind({});
-Standard.args = {};
+export const Tag = Template.bind({});
+Tag.args = {};

@@ -2,15 +2,27 @@ import { createCheckbox } from './Checkbox';
 export default {
   title: 'Interactions/Checkbox',
   argTypes: {
-    value: { control: 'text' },
-    checked: { control: 'boolean' },
-    innerHTML: { control: 'text' },
+    value: {
+      name: 'Value',
+      control: 'text',
+      defaultValue: false,
+    },
+    checked: {
+      name: 'Checked',
+      control: 'boolean',
+      defaultValue: false,
+    },
+    innerHTML: {
+      name: 'Label',
+      control: 'text',
+      defaultValue: 'Checkbox',
+    },
   },
 };
-const Template = (args) => {
+const Template = args => {
   // You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
   return createCheckbox(args);
 };
-export const Standard = Template.bind({});
-Standard.args = {};
+export const Checkbox = Template.bind({});
+Checkbox.args = {};
