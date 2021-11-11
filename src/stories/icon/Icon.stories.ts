@@ -4,7 +4,16 @@ import { createIcon } from './Icon';
 export default {
   title: 'Tokens/Icon',
   argTypes: {
-    icon: { control: 'text' },
+    icon: {
+      name: 'Icon name',
+      control: 'select',
+      options: ['Arrow Right', 'Share External'],
+      mapping: {
+        'Arrow Right': 'arrow-right',
+        'Share External': 'share-external'
+      },
+      defaultValue: 'Arrow Right'
+    },
   },
 } as Meta;
 
@@ -14,12 +23,7 @@ const Template: Story<HTMLCcIconElement> = args => {
   return createIcon(args);
 };
 
-export const ArrowRight = Template.bind({}) as Story<HTMLCcIconElement>;
-ArrowRight.args = {
+export const Icon = Template.bind({}) as Story<HTMLCcIconElement>;
+Icon.args = {
   icon: 'arrow-right',
-};
-
-export const ShareExternal = Template.bind({}) as Story<HTMLCcIconElement>;
-ShareExternal.args = {
-  icon: 'share-external',
 };

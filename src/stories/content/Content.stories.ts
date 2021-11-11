@@ -4,40 +4,37 @@ import { createContent } from './Content';
 export default {
   title: 'Structure/Content',
   argTypes: {
-    portfolio: { control: 'text' },
-    columns: { control: 'number' },
-    innerHTML: { control: 'text' },
+    portfolio: {
+      name: 'Portfolio',
+      mapping: {
+        create: 'create',
+        default: false,
+        empower: 'empower',
+        technology: 'technology',
+      },
+      control: 'select',
+      options: ['create', 'default', 'empower', 'technology'],
+      defaultValue: 'default',
+    },
+    columns: {
+      name: 'Spalten',
+      control: 'inline-radio',
+      options: [1, 2, 3, 4],
+      defaultValue: 1,
+    },
+    innerHTML: {
+      name: 'Content',
+      control: 'text',
+      defaultValue: '<div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div><div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div><div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div><div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>'
+    },
   },
 } as Meta;
 
-const Template: Story<HTMLCcContentElement> = (args) => {
+const Template: Story<HTMLCcContentElement> = args => {
   // You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
   return createContent(args);
 };
 
-export const Standard = Template.bind({}) as Story<HTMLCcContentElement>;
-Standard.args = {
-  innerHTML: '<div>Text1</div>',
-};
-
-export const Empower = Template.bind({}) as Story<HTMLCcContentElement>;
-Empower.args = {
-  portfolio: 'empower',
-  columns: 2,
-  innerHTML: '<div>Text1</div><div>Text2</div>',
-};
-
-export const Technology = Template.bind({}) as Story<HTMLCcContentElement>;
-Technology.args = {
-  portfolio: 'technology',
-  columns: 3,
-  innerHTML: '<div>Text1</div><div>Text2</div><div>Text3</div>',
-};
-
-export const Create = Template.bind({}) as Story<HTMLCcContentElement>;
-Create.args = {
-  portfolio: 'create',
-  columns: 4,
-  innerHTML: '<div>Text1</div><div>Text2</div><div>Text3</div><div>Text4</div>',
-};
+export const Content = Template.bind({}) as Story<HTMLCcContentElement>;
+Content.args = {};

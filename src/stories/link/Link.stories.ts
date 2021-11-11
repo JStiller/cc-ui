@@ -4,13 +4,25 @@ import { createLink } from './Link';
 export default {
   title: 'Interactions/Link',
   argTypes: {
-    href: { control: 'text' },
-    external: { control: 'boolean' },
-    innerHTML: { control: 'text' },
+    href: {
+      name: 'URL',
+      control: 'text',
+      defaultValue: '#',
+    },
+    external: {
+      name: 'External Link?',
+      control: 'boolean',
+      defaultValue: false,
+    },
+    innerHTML: {
+      name: 'Label',
+      control: 'text',
+      defaultValue: 'Link',
+    },
   },
 } as Meta;
 
-const Template: Story<HTMLCcLinkElement> = (args) => {
+const Template: Story<HTMLCcLinkElement> = args => {
   // You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
   return createLink(args);
@@ -18,8 +30,3 @@ const Template: Story<HTMLCcLinkElement> = (args) => {
 
 export const Link = Template.bind({}) as Story<HTMLCcLinkElement>;
 Link.args = {};
-
-export const ExternalLink = Template.bind({}) as Story<HTMLCcLinkElement>;
-ExternalLink.args = {
-  external: true
-};

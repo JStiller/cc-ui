@@ -4,7 +4,11 @@ import { createTag } from './Tag';
 export default {
   title: 'Structure/Tag',
   argTypes: {
-    innerHTML: { control: 'text' },
+    innerHTML: {
+      name: 'Content',
+      control: 'text',
+      defaultValue: 'Tag'
+    },
   },
 } as Meta;
 
@@ -14,5 +18,5 @@ const Template: Story<HTMLCcTagElement> = (args) => {
   return createTag(args);
 };
 
-export const Standard = Template.bind({}) as Story<HTMLCcTagElement>;
-Standard.args = {};
+export const Tag = Template.bind({}) as Story<HTMLCcTagElement>;
+Tag.args = {};
