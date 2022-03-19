@@ -1,7 +1,7 @@
 name: Build and Deploy
 on: 
   push:
-    paths: ["src/**"]
+    paths: ["packages/stencil/src/**", "packages/storybook/stories/**"]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
           persist-credentials: false
 
       - name: Set up Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'npm'
@@ -28,7 +28,7 @@ jobs:
         run: tar -czf ${{ runner.temp }}/artifact.tar.gz --exclude ".github" .
 
       - name: Archive artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: artifact
           path: ${{ runner.temp }}/artifact.tar.gz
@@ -40,16 +40,16 @@ jobs:
 
     steps:
       - name: Pull archived artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: artifact
 
       - name: 'Extract artifact'
         run: tar -xzf artifact.tar.gz
       - name: Set up Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 16
           cache: 'npm'
           cache-dependency-path: 'package-lock.json'
 
@@ -62,16 +62,16 @@ jobs:
 
     steps:
       - name: Pull archived artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: artifact
 
       - name: 'Extract artifact'
         run: tar -xzf artifact.tar.gz
       - name: Set up Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 16
           cache: 'npm'
           cache-dependency-path: 'package-lock.json'
 
