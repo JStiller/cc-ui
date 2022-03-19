@@ -7,16 +7,14 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
-      esmLoaderPath: '../dist/loader',
+      esmLoaderPath: '../loader',
     },
     {
       type: 'docs-readme',
-      dir: 'dist/docs',
     },
     {
       type: 'www',
-      baseUrl: 'cc-ui',
-      copy: [{ src: 'assets', dest: '' }],
+      serviceWorker: null, // disable service workers
     },
   ],
   plugins: [

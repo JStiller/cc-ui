@@ -15,7 +15,7 @@ export class CcIcon implements ComponentInterface {
     return (
       <Host>
         <svg style={{ 'height': '22', 'width': '22' }}>
-          <use href={`iconography/${this.icon}.svg#${this.icon}`}></use>
+          <use href={`assets/iconography/${this.icon}.svg#${this.icon}`}></use>
         </svg>
       </Host>
     );

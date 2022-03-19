@@ -11,7 +11,7 @@ describe('cc-icon', () => {
       <cc-icon icon="arrow-right">
         <mock:shadow-root>
           <svg style="height: 22; width: 22;">
-            <use href="iconography/arrow-right.svg#arrow-right"></use>
+            <use href="assets/iconography/arrow-right.svg#arrow-right"></use>
           </svg>
         </mock:shadow-root>
       </cc-icon>

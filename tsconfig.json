@@ -17,9 +17,6 @@
     "jsxFactory": "h",
     "jsxFragmentFactory": "Fragment"
   },
-  "include": [
-    "src"
-  ],
   "exclude": [
     "node_modules"
   ]
