@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "8:00"
+      timezone: "Europe/Berlin"
+    target-branch: "main"
+    labels:
+      - "npm"
+      - "dependencies"
+    assignees:
+      - "JStiller"
