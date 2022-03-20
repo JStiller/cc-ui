@@ -11,7 +11,7 @@
       "outputs": ["packages/stencil/dist/**", "packages/stencil/www/**"]
     },
     "storybook#build": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["stencil#build"],
       "outputs": ["docs/**"]
     },
     "test": {
